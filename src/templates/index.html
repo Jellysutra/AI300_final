@@ -18,21 +18,21 @@
             <label for="age">Age:</label><br>
             <input type="text" id="age" name="age" value="30"><br><br>
 
-            <label for="senior_citizen">Senior Citizen:</label><br>
+            <label for="senior_citizen">Senior Citizen Indicator:</label><br>
                 <select name="senior_citizen" id="senior_citizen">
                 <option value=""></option>
                 <option value="1">Yes</option>
                 <option value="0" selected>No</option>
             </select><br><br>
 
-            <label for="married">Marriage:</label><br>
+            <label for="married">Marriage Status:</label><br>
                 <select name="married" id="married">
                 <option value=""></option>
                 <option value="1">Yes</option>
                 <option value="0" selected>No</option>
             </select><br><br>
 
-            <label for="num_dependents">Dependents:</label><br>
+            <label for="num_dependents">No. of Dependents:</label><br>
             <select name="num_dependents" id="num_dependents">
                 <option value="0">0</option>
                 <option value="1" selected>1</option>
@@ -42,7 +42,7 @@
                 <option value="5">5 or more</option>
             </select><br><br>
 
-            <label for="num_referrals">Referrals:</label><br>
+            <label for="num_referrals">No. of Referrals:</label><br>
             <select name="num_referrals" id="num_referrals">
                 <option value="0">0</option>
                 <option value="1" selected>1</option>
@@ -52,17 +52,23 @@
                 <option value="5">5 or more</option>
             </select><br><br>
 
-            <label for="avg_gb_download_monthly">Data_Usage:</label><br>
+            <label for="avg_gb_download_monthly">Data Usage (gb):</label><br>
             <input type="text" id="avg_gb_download_monthly" name="avg_gb_download_monthly" value="15"><br><br>
 
-            <label for="total_monthly_fee">Monthly Plan:</label><br>
+            <label for="total_monthly_fee">Monthly Plan ($):</label><br>
             <input type="text" id="total_monthly_fee" name="total_monthly_fee" value="35"><br><br>
 
-            <label for="total_charges_quarter">Quarter Bill:</label><br>
+            <label for="total_charges_quarter">Quarter Bill ($):</label><br>
             <input type="text" id="total_charges_quarter" name="total_charges_quarter" value="335"><br><br>
             
             <input type="submit" value="Predict">
         </form>
+        {% if prediction is not defined %}
+            <h2>Customer Churn Prediction: {{ prediction }}</h2>
+        {% else %}
+            <h2>Customer Churn Prediction: {{ prediction }}</h2>
+        {% endif %}
+       
 
     </div>
 </body>
