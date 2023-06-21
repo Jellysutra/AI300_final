@@ -34,6 +34,6 @@ def home():
         print(prediction)
         return render_template('index.html', prediction=prediction) # Add parameter here
     else:
-        print("notig")
+        return render_template('index.html')
 if __name__ == '__main__':
     app.run(debug=True)
