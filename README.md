@@ -13,3 +13,5 @@ Parameters: 'colsample_bytree': 0.4, 'learning_rate': 0.02, 'max_depth': 3, 'min
 Using GridSearchCV
 
 AUC Score: 0.87
+
+website: http://ec2-18-142-184-10.ap-southeast-1.compute.amazonaws.com/
