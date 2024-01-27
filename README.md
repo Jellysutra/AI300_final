@@ -14,4 +14,4 @@ Using GridSearchCV
 
 AUC Score: 0.87
 
-website: http://ec2-18-142-184-10.ap-southeast-1.compute.amazonaws.com/
+website: http://ec2-18-142-184-10.ap-southeast-1.compute.amazonaws.com/ (website is now defunc, free trial ended)
